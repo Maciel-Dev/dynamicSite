@@ -1,0 +1,53 @@
+.nameAnimation{
+    animation: nameAnimation 2s ease 0s 1 normal forwards;
+}
+@keyframes nameAnimation {
+	0%,
+	100% {
+		transform: translateY(0) rotate(0);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateY(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateY(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateY(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateY(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateY(-6px) rotate(-1.2deg);
+	}
+}
+
+.animationTextHover:hover{
+    animation: hoverAnimation 1s ease 0s 1 normal forwards;
+}
+
+@keyframes hoverAnimation {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.conteudoNome:hover{
+    color: red;
+
+}
