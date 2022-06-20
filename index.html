@@ -13,9 +13,10 @@
     <main>
         <div class="text-center text-white nameAnimation top-0">
             <h1>Infosis</h1>
+            <p id="contagem">0</p>
         </div>
         <aside class="text-white p-3 m-md-3">
-            <h3>Site de acesso "Teste"</h3>
+            <h3 id="welcome">Site de acesso "Teste"</h3>
         </aside>
     </main>
     <!-- Form Login -->
@@ -31,7 +32,7 @@
                 <input type="password" name="passWord" id="passWord" class="" placeholder="Senha"> <!-- Sem classe no momento -->
             </div>
             <div class="d-flex justify-content-center" >
-                <input type="submit" name="button" id="submitButton" onclick="changePlaceHolder(this, 'ola')" class="mt-3"> <!-- Sem classe no momento -->
+                <button type="button" id="submitButton" class="btn btn-outline-primary mt-2">Login</button>
             </div>
         </div>
     </form>
