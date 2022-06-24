@@ -1,0 +1,202 @@
+.buttonAnimation:hover{
+	animation: buttonAnimation 2s ease-out 0s 1 normal forwards;
+}
+
+@keyframes buttonAnimation{
+	0%,
+	100%{
+		transform: scale(20px);
+	}
+	
+	50%{
+		transform: scale(0px);
+	}
+}
+
+.nameAnimation{
+    animation: nameAnimation 2s ease 0s 1 normal forwards;
+}
+@keyframes nameAnimation {
+	0%,
+	100% {
+		transform: translateY(0) rotate(0);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateY(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateY(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateY(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateY(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateY(-6px) rotate(-1.2deg);
+	}
+}
+
+.animationTextHover:hover{
+    animation: hoverAnimation 1s ease 0s 1 normal forwards;
+}
+
+@keyframes hoverAnimation {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.conteudoNome:hover{
+    color: #6BA1FF;
+}
+
+.movementCenter:hover{
+	animation: hoverAnimation 1s ease 0s 1 normal forwards;
+}
+
+@keyframes hoverAnimation {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.initialMovement{
+	animation: initialMovement 2s ease-out 0s 1 normal forwards;
+}
+
+@keyframes initialMovement{
+	0%{
+		transform:translateX(300px) scale(0.5);
+	}
+
+
+	100%{
+		transform:translateX(0px) scale(1) !important;
+	}
+}
+
+.Barrel{
+	animation: barrelRoll 1s ease-out 0s 1 normal forwards;
+}
+
+@keyframes barrelRoll{
+	0%{
+		transform:rotate(0deg) translateY(0px);
+	}
+	100%{
+		transform:rotate(360deg) translateY(0px);
+	}
+}
+
+/* Caso login com sucesso */
+
+.lARegister{
+	animation: lARegisterBtn 2s ease-in 0s 1 normal forwards;
+}
+
+@keyframes lARegisterBtn{
+	0%{
+		transform:translateX(0px);
+	}
+	100%{
+		transform:translateX(-300px);
+	}
+}
+
+.lASubTextOff{
+	animation: showOff 1s ease-out 0s 1 normal forwards;
+}
+
+@keyframes showOff{
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(0);
+	}
+}
+
+.lANavTitle{
+	animation: lANavTitle 2s ease-out 0s 1 normal forwards;
+}
+
+@keyframes lANavTitle{
+	0%{
+		transform: scale(1) translateY(0px);
+	}
+
+	50%{
+		transform: scale(0.8) translateY(20px);
+	}
+
+	100%{
+		transform: scale(1) translateY(-50px);
+	}
+}
+
+.lARemoveForms{
+	animation: removeForms 3s ease-out 0s 1 normal forwards;
+}
+
+@keyframes removeForms {
+	0%{
+		transform: translateX(0px);
+	}
+
+	100%{
+		transform: translateX(1200px);
+	}
+}
+
+.lARemoveLoginButton{
+	animation: lARemoveLoginButton 2s ease-out 0s 1 normal forwards;
+}
+
+@keyframes lARemoveLoginButton{
+	0%{
+		transform: translateY(0px);
+	}
+
+	100%{
+		transform: translateY(200px);
+	}
+}
+
+.writingLogin {
+	animation: typing 3.5s steps(40, end), 
+	blink-caret .75s step-end infinite;
+}
+
+@keyframes typing{
+	from { width: 0 }
+	to { width: 100% }
+  }
+
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+
+}
