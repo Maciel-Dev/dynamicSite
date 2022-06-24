@@ -15,15 +15,13 @@ Ext.onReady(function(){
         title : "Simple form",
         bodyStyle:'padding:5px 5px 0',
         width: 350,
-        cls: '',
+        cls:'text-center container mt-5',
 
         
         items:[{
             xtype:'fieldset',
-            checkboxToggle:true,
             title: 'User Information',
             autoHeight: true,
-            collapsed: true,
             defaultType: 'textfield',
             items:[{
                 fieldLabel: 'First Name',
@@ -41,29 +39,10 @@ Ext.onReady(function(){
                 vtype: 'email'
             }]
 
-        },{
-            xtype: 'fieldset',
-            title: 'Phone Number',
-            collapsible: true,
-            autoHeight: true,
-            defaults: {width: 210},
-            defaultType: 'textfield',
-            items: [{
-                fieldLabel: 'Home',
-                name: 'home',
-                placeholder: 'Olá'
-            },{
-                fieldLabel: 'Business',
-                name: 'business'
-            },{
-                fieldLabel: 'Mobile',
-                name: 'mobile'
-            },{
-                fieldLabel: 'Fax',
-                name: 'fax'
-            }]
         }],
-        
+
+
+
         buttons: [{
             text: 'Save'
         },{

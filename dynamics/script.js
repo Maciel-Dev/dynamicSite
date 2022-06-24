@@ -1,10 +1,10 @@
-const loginButton = document.querySelector("#submitButton");
+
 const nameH2 = document.querySelector("#welcome");
 const registButton = document.querySelector("#register");
 const loginText = document.querySelector("#loginText");
 const writingText = document.querySelector("#writingLogin");
 const nameMain = document.querySelector("#infosisName");
-const divUser = document.querySelector("#divUserName");
+
 
 
 
@@ -12,9 +12,14 @@ const divUser = document.querySelector("#divUserName");
 
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("Olá, eu existo");
+    console.log(extTextField);
+    extTextField.textContent = "Oi";
+    console.log(extTextField);
+
     registButton.classList.add("initialMovement");
     if(writingText.classList.contains("lASubTextWriting")){
         writingText.classList.remove("lASubTextWriting");
+
 
     }
 
@@ -23,8 +28,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
                         //Botão de Login -> Recebe o formulário apenas userName
 function inputUser(){
-    const userName = document.querySelector('#userName').value;
-    const passWord = document.querySelector('#passWord').value;
+    
+
+
     loginButton.addEventListener("click", e=>{
         if(userName == "Do a barrel roll"){
             console.log("Are you serious?");
